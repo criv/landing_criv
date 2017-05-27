@@ -1,17 +1,7 @@
-const gulp = require('gulp')
-const watch = require('gulp-watch')
-const webserver = require('gulp-webserver')
+var express = require('express');
+var app = express();
+var path = require('path');
 
-gulp.task('server', ['watch'], function(){
-    gulp.src('public').pipe(webserver({
-        livereload: true,
-        port: 3000,
-        open: true
-    }))
+app.use(express.static('./public')); 
 
-})
-
-
-gulp.task('watch', function(){
-    watch('public/*.html', () => gulp.start('index.html'))
-})
+app.listen(8080);

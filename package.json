@@ -2,7 +2,7 @@
   "name": "cruvi-landing-page",
   "version": "1.0.0",
   "description": "[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
-  "main": "/public/index.html",
+  "main": "server.js",
   "scripts": {
     "dev": "gulp",
     "start": "gulp server"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1"

@@ -1,17 +1,16 @@
-const gulp = require('gulp')
-const watch = require('gulp-watch')
-const webserver = require('gulp-webserver')
 
-gulp.task('server', ['watch'], function(){
-    gulp.src('public').pipe(webserver({
-        livereload: true,
-        port: 3000,
-        open: true
-    }))
+var express = require('express');
+var app = express();
+var path = require('path');
+var bodyParser = require('body-parser');
 
-})
+app.use(express.static('./public')); 
+app.use(bodyParser.json());
 
+// app.get('/', function(request, response) {
+//   response.render('./public/index.html');
+// });
 
-gulp.task('watch', function(){
-    watch('public/*.html', () => gulp.start('index.html'))
-})
+var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
+
+app.listen(port);

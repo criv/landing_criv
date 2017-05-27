@@ -19,7 +19,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -172,17 +173,17 @@
 
             <!-- CONTACT FORM -->
             <div class="col-md-7 col-md-offset-1 text-left wow fadeInLeft" data-wow-duration="1s">
-                <form action="#" method="post" class="contact-form  wow fadeInLeft">
+                <form class="contact-form  wow fadeInLeft">
                     <div class="form-group">
-                        <input type="text" required class="form-control" placeholder="Nome">
+                        <input id="nome" type="text" required class="form-control" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <input type="email" required class="form-control" placeholder="Email">
+                        <input id="email" type="email" required class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <textarea required class="form-control" rows="5" placeholder="Mensagem"></textarea>
+                        <textarea id="mensagem" required class="form-control" rows="5" placeholder="Mensagem"></textarea>
                     </div>
-                    <button type="submit" class="pull-left send-button button">Enviar Mesagem</button>
+                    <button type="button" onclick="enviar()" class="pull-left send-button button">Enviar Mesagem</button>
                 </form>
             </div>
             <!-- END CONTACT FORM -->
@@ -271,6 +272,26 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="js/fetch.js"></script>
+
 </body>
 
+<script> 
+function enviar() {
+    var nome = document.getElementById('nome').value,
+        email = document.getElementById('email').value,
+        mensagem = document.getElementById('mensagem').value;
+        fetch('https://contatocriv.cloudant.com/criv', {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body:  JSON.stringify({
+                "nome": nome,
+                "email" : email, 
+                "mensagem": mensagem
+            })
+        })
+}
+</script>
 </html>

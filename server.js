@@ -8,4 +8,10 @@ gulp.task('server', ['watch'], function(){
         port: 3000,
         open: true
     }))
+
+})
+
+
+gulp.task('watch', function(){
+    watch('public/*.html', () => gulp.start('index.html'))
 })

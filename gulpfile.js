@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const util = require('gulp-util')
 
-require('./gulp/server')
+require('./gulpTasks')
 
 gulp.task('default', function(){
     gulp.start('server')

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "gulp",
-    "start": "gulp server"
+    "start": "node server.js"
   },
   "author": "Equipe Cruvi",
   "license": "ISC",

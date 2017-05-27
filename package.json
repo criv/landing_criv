@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "dev": "gulp",
-    "start": "gulp server"
+    "start": "node server.js"
   },
   "author": "Equipe Cruvi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "express": "^4.15.3",
     "gulp": "^3.9.1",

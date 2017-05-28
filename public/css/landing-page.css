@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -169,6 +169,7 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+<<<<<<< HEAD
 .icon {
     width: 300px !important;
     height: 300px !important;
@@ -177,3 +178,78 @@ p.copyright {
 .dim {
     opacity: 0.3 !important;
 }
+=======
+.contact-form .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 20px 15px;
+}
+.form-control {
+    height: 45px;
+    font-size: 16px;
+}
+.send-button {
+    background: #24C0D9;
+    color: #fff;
+}
+.contact-form {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.contact-info {
+    margin-top: 30px;
+}
+.contact-info span {
+    color: #24C0D9;
+    margin-right: 10px;
+}
+.contact-info, .business-hours {
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #5F5F5F;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+.button:hover {
+    text-decoration: none;
+    background: #454545;
+    border-color: #454545;
+}
+
+.fontezinha h3,  .fontezinha h2{
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #606060;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.fontezinha p {
+    font-size: 15px;
+    color: #727272;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.send-button {
+    background: #24C0D9;
+    color: #fff;
+}
+
+a {
+    color: #24C0D9;
+    text-decoration: none;
+}
+>>>>>>> 3addbe932ab48ee8d9a5c95a9d80592a6829f1af

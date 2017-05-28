@@ -169,7 +169,6 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-<<<<<<< HEAD
 .icon {
     width: 300px !important;
     height: 300px !important;
@@ -178,7 +177,7 @@ p.copyright {
 .dim {
     opacity: 0.3 !important;
 }
-=======
+
 .contact-form .form-control {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -189,7 +188,7 @@ p.copyright {
     font-size: 16px;
 }
 .send-button {
-    background: #24C0D9;
+    background: #848483;
     color: #fff;
 }
 .contact-form {
@@ -200,7 +199,7 @@ p.copyright {
     margin-top: 30px;
 }
 .contact-info span {
-    color: #24C0D9;
+    color: #848483;
     margin-right: 10px;
 }
 .contact-info, .business-hours {
@@ -244,12 +243,11 @@ p.copyright {
 }
 
 .send-button {
-    background: #24C0D9;
+    background: #848483;
     color: #fff;
 }
 
 a {
-    color: #24C0D9;
+    color: #848483;
     text-decoration: none;
 }
->>>>>>> 3addbe932ab48ee8d9a5c95a9d80592a6829f1af

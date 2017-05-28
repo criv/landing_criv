@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2430px" height="2430px" viewBox="0 0 2430 2430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>CRIV2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CRIV2" transform="translate(15.000000, 15.000000)">
+            <circle id="CIRCULO" stroke="#333333" stroke-width="30" cx="1200" cy="1200" r="1200"></circle>
+            <g id="LETRAS" transform="translate(175.000000, 658.000000)" font-size="500" font-family="AvenirNext-Regular, Avenir Next" fill="#333333" font-weight="normal">
+                <text id="C">
+                    <tspan x="175" y="500">C</tspan>
+                </text>
+                <text id="I">
+                    <tspan x="1000" y="1042">I</tspan>
+                </text>
+                <text id="V">
+                    <tspan x="1539.25" y="1042">V</tspan>
+                    <tspan x="1695" y="1725"></tspan>
+                </text>
+                <text id="R">
+                    <tspan x="915.25" y="500">R</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
